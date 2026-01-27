@@ -2,8 +2,8 @@
   <el-dialog
     :model-value="isOpen.TestModal"
     :before-close="() => closeModal('TestModal')"
-    class="no-header body-p-0 max-w-[700px]"
     destroy-on-close
+    class="no-header body-p-0 max-w-[700px]"
   >
     <div>Test Modal Content</div>
 
