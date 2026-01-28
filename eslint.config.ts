@@ -10,4 +10,12 @@ export default defineSoftonixEslintConfig({
       'src/api/types/axios.d.ts'
     ]
   }
+}).append({
+  files: ['src/task-1-type-challenges/**/*.ts'],
+  rules: {
+    '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/naming-convention': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/no-empty-object-type': 'off'
+  }
 })
