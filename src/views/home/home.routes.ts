@@ -1,13 +1,13 @@
 import type { RouteRecordRaw } from 'vue-router'
 
-export const homeNames = {
+export const homeRouteNames = {
   home: 'home'
 }
 
 export const homeRoutes: RouteRecordRaw[] = [
   {
     path: '/',
-    name: homeNames.home,
+    name: homeRouteNames.home,
     meta: {
       label: 'Home'
     },

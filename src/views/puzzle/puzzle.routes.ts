@@ -1,13 +1,13 @@
 import type { RouteRecordRaw } from 'vue-router'
 
-export const puzzleNames = {
+export const puzzleRouteNames = {
   puzzle: 'puzzle'
 }
 
 export const puzzleRoutes: RouteRecordRaw[] = [
   {
     path: '/puzzle',
-    name: puzzleNames.puzzle,
+    name: puzzleRouteNames.puzzle,
     meta: {
       label: 'Puzzle'
     },
