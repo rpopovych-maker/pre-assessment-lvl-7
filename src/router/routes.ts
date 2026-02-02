@@ -1,15 +1,13 @@
 import type { RouteRecordRaw } from 'vue-router'
-import { routeNames } from './route-names'
+import { homeRoutes } from '@/views/home/home.routes'
+import { puzzleRoutes } from '@/views/puzzle/puzzle.routes'
 
 const routes: Array<RouteRecordRaw> = [
+  ...homeRoutes,
+  ...puzzleRoutes,
   {
     path: '/:pathMatch(.*)*',
     redirect: '/'
-  },
-  {
-    path: '/',
-    name: routeNames.home,
-    component: () => import('@/views/Home.vue')
   }
 ]
 

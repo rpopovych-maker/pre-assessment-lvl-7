@@ -14,10 +14,11 @@
     "postinstall": "run-p openapi-generate"
   },
   "dependencies": {
-    "@vueuse/core": "^12.3.0",
+    "@vueuse/core": "^12.8.2",
     "axios": "^1.7.9",
     "element-plus": "^2.9.2",
     "pinia": "^2.3.0",
+    "pluralize": "^8.0.0",
     "portal-vue": "^3.0.0",
     "vue": "^3.5.13",
     "vue-i18n": "^11.0.1",
@@ -30,6 +31,7 @@
     "@tsconfig/node22": "^22.0.2",
     "@type-challenges/utils": "^0.1.1",
     "@types/node": "^22.17.2",
+    "@types/pluralize": "^0.0.33",
     "@vitejs/plugin-vue": "^6.0.1",
     "@vue/tsconfig": "^0.8.1",
     "eslint": "^9.33.0",
