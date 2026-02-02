@@ -34,3 +34,8 @@ coverage
 
 stats.html
 *.tsbuildinfo
+
+# auto import files
+dts/auto-imports.d.ts
+dts/components.d.ts
+.eslintrc-auto-import.json
