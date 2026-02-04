@@ -24,16 +24,9 @@
 const contactsStore = useContactsStore()
 const { columns, rows, loading } = storeToRefs(contactsStore)
 
+useContactsWorker()
+
 onBeforeMount(() => {
   contactsStore.initialFetch()
-
-  // Uncomment this to see updates in the table
-  contactsUpdatesService.listenUpdates((update) => {
-    contactsStore.patchRow(update)
-  })
-})
-
-onBeforeUnmount(() => {
-  contactsUpdatesService.stopListening()
 })
 </script>

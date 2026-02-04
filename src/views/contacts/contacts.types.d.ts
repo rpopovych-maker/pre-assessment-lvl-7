@@ -12,3 +12,9 @@ interface IContactRow {
   id: string
   cells: IContactCell[]
 }
+
+interface IContactUpdate {
+  rowId: string
+  colId: string
+  value: string
+}

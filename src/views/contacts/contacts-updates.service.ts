@@ -3,7 +3,7 @@ import { getRandomCellUpdate } from './contacts-table.fixture'
 class ContactsUpdatesService {
   interval: number | null = null
 
-  listenUpdates (callback: (update: ReturnType<typeof getRandomCellUpdate>) => void) {
+  listenUpdates (callback: (update: IContactUpdate) => void) {
     this.interval = setInterval(() => {
       callback(getRandomCellUpdate())
     })
