@@ -6,14 +6,19 @@ import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { SoftonixAutoImportsVue, Resolvers } from '@softonix/vite-plugin-auto-imports-vue'
+import svgLoader from 'vite-svg-loader'
+
+import { IconNamesGenerator } from './.config'
 
 export default defineConfig({
   plugins: [
     vue(),
     tailwindcss(),
+    svgLoader(),
     visualizer({
       open: true
     }),
+    IconNamesGenerator(),
     SoftonixAutoImportsVue({
       scripts: {
         dirs: ['./src/api/*client.ts'],
@@ -29,7 +34,7 @@ export default defineConfig({
       },
       components: {
         resolvers: [
-          Resolvers.ElementPlusResolver()
+          Resolvers.ElementPlusResolver({ importStyle: false })
         ]
       }
     })

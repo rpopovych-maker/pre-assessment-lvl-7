@@ -1,4 +1,6 @@
-@import './tailwind.css';
+@import 'tailwindcss';
+@import './fonts.css';
 @import './base.css';
-@import './utils/animations.css';
-@import './element-reset/index.css';
+@import './tailwind-theme-override.css';
+@import './element-reset/index.css' layer(components);
+@import './animations.css';

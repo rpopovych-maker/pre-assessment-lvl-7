@@ -1,0 +1,154 @@
+{
+  "id": "gel-kayano-14",
+  "name": "ASICS GEL-KAYANO 14",
+  "category": "Unisex SportStyle Shoes",
+  "isFavourite": false,
+  "description": "<p>The GEL-KAYANO 14 sneaker resurfaces with its late 2000s aesthetic as a nod to our storied GEL-KAYANO legacy. Reinventing the shoe's performance capabilities with updated technological components, this version became the first iteration in the sneaker's lineage to implement our Impact Guidance System (I.G.S.) technology.</p><br><p>The upper construction of this shoe is built with a combination of mesh and synthetic leather materials that offer a supportive fit. Underfoot, GEL technology cushioning is placed in the rearfoot and forefoot to help soften landings and create smoother transitions.</p>",
+  "details": [
+    { "label": "Brand", "value": "ASICS" },
+    { "label": "Model", "value": "GEL-KAYANO 14" },
+    { "label": "Type", "value": "Running Shoe" },
+    { "label": "Cushioning", "value": "GEL technology" },
+    { "label": "Weight", "value": "11.5 oz (men's size 9)" }
+  ],
+  "shippingInfo": "<p>The ASICS GEL-KAYANO 14 is available at various online and physical retailers. Prices typically range from $140 to $160 depending on size, colorway, and availability. Popular platforms like ASICS Official Store, Amazon, Foot Locker, and Zappos offer these sneakers with options for free shipping or discounts on certain models.</p><br><p>Be sure to check for seasonal sales or limited-time offers when shopping, as prices can vary. Zappos and Amazon often feature customer reviews and size guides to assist with the purchasing process.</p>",
+  "variants": [
+    {
+      "id": "white-tai-chi-yellow",
+      "colorName": "White/Tai Chi Yellow",
+      "price": 155.00,
+      "outOfStock": false,
+      "images": [
+        { "thumbnail": "/mock/images/color-variants/image component-2.png" },
+        { "large": "/mock/images/white/1165807.webp" },
+        { "large": "/mock/images/white/1165813.webp" },
+        { "large": "/mock/images/white/1165816.webp" },
+        { "large": "/mock/images/white/1165819.webp" },
+        { "large": "/mock/images/white/white-1600.webp" }
+      ],
+      "sizeChart": {
+        "formats": ["UK", "US", "EU", "cm"],
+        "rows": [
+          { "id": "wtcy-uk6", "UK": 6, "US": 6.5, "EU": 39.5, "cm": 24.5 },
+          { "id": "wtcy-uk6.5", "UK": 6.5, "US": 7, "EU": 40, "cm": 25 },
+          { "id": "wtcy-uk7", "UK": 7, "US": 7.5, "EU": 41, "cm": 25.4 },
+          { "id": "wtcy-uk7.5", "UK": 7.5, "US": 8, "EU": 41.5, "cm": 25.8 },
+          { "id": "wtcy-uk8", "UK": 8, "US": 8.5, "EU": 42, "cm": 26.2 },
+          { "id": "wtcy-uk8.5", "UK": 8.5, "US": 9, "EU": 42.5, "cm": 26.7 },
+          { "id": "wtcy-uk9", "UK": 9, "US": 9.5, "EU": 43, "cm": 27.1 },
+          { "id": "wtcy-uk9.5", "UK": 9.5, "US": 10, "EU": 43.5, "cm": 27.5 },
+          { "id": "wtcy-uk10", "UK": 10, "US": 10.5, "EU": 44, "cm": 27.9 },
+          { "id": "wtcy-uk10.5", "UK": 10.5, "US": 11, "EU": 44.5, "cm": 28.4 },
+          { "id": "wtcy-uk11", "UK": 11, "US": 11.5, "EU": 45, "cm": 28.8 },
+          { "id": "wtcy-uk11.5", "UK": 11.5, "US": 12, "EU": 45.5, "cm": 29.2, "outOfStock": true },
+          { "id": "wtcy-uk12", "UK": 12, "US": 12.5, "EU": 46, "cm": 29.6, "outOfStock": true },
+          { "id": "wtcy-uk12.5", "UK": 12.5, "US": 13, "EU": 46.5, "cm": 30.1 },
+          { "id": "wtcy-uk13", "UK": 13, "US": 13.5, "EU": 47, "cm": 30.5 }
+        ]
+      }
+    },
+    {
+      "id": "black-silver",
+      "colorName": "Metropolis/Jasper Green",
+      "price": 165.00,
+      "outOfStock": false,
+      "images": [
+        { "thumbnail": "/mock/images/color-variants/image-1.png" },
+        { "large": "/mock/images/black/1082404.webp" },
+        { "large": "/mock/images/black/1082407.webp" },
+        { "large": "/mock/images/black/1082413.webp" },
+        { "large": "/mock/images/black/1082416.webp" },
+        { "large": "/mock/images/black/1082419.webp" }
+      ],
+      "sizeChart": {
+        "formats": ["UK", "US", "EU", "cm"],
+        "rows": [
+          { "id": "bs-uk6", "UK": 6, "US": 6.5, "EU": 39.5, "cm": 24.5 },
+          { "id": "bs-uk6.5", "UK": 6.5, "US": 7, "EU": 40, "cm": 25 },
+          { "id": "bs-uk7", "UK": 7, "US": 7.5, "EU": 41, "cm": 25.4 },
+          { "id": "bs-uk7.5", "UK": 7.5, "US": 8, "EU": 41.5, "cm": 25.8 },
+          { "id": "bs-uk8", "UK": 8, "US": 8.5, "EU": 42, "cm": 26.2 },
+          { "id": "bs-uk8.5", "UK": 8.5, "US": 9, "EU": 42.5, "cm": 26.7 },
+          { "id": "bs-uk9", "UK": 9, "US": 9.5, "EU": 43, "cm": 27.1 },
+          { "id": "bs-uk9.5", "UK": 9.5, "US": 10, "EU": 43.5, "cm": 27.5 },
+          { "id": "bs-uk10", "UK": 10, "US": 10.5, "EU": 44, "cm": 27.9 },
+          { "id": "bs-uk10.5", "UK": 10.5, "US": 11, "EU": 44.5, "cm": 28.4, "outOfStock": true },
+          { "id": "bs-uk11", "UK": 11, "US": 11.5, "EU": 45, "cm": 28.8 },
+          { "id": "bs-uk11.5", "UK": 11.5, "US": 12, "EU": 45.5, "cm": 29.2, "outOfStock": true },
+          { "id": "bs-uk12", "UK": 12, "US": 12.5, "EU": 46, "cm": 29.6, "outOfStock": true },
+          { "id": "bs-uk12.5", "UK": 12.5, "US": 13, "EU": 46.5, "cm": 30.1 },
+          { "id": "bs-uk13", "UK": 13, "US": 13.5, "EU": 47, "cm": 30.5 }
+        ]
+      }
+    },
+    {
+      "id": "white-blue",
+      "colorName": "White/Blue",
+      "price": 160.00,
+      "outOfStock": true,
+      "images": [
+        { "thumbnail": "/mock/images/color-variants/image component.png" },
+        { "large": "/mock/images/white/1165807.webp" },
+        { "large": "/mock/images/white/1165813.webp" },
+        { "large": "/mock/images/white/1165816.webp" },
+        { "large": "/mock/images/white/1165819.webp" }
+      ],
+      "sizeChart": {
+        "formats": ["UK", "US", "EU", "cm"],
+        "rows": [
+          { "id": "wb-uk6", "UK": 6, "US": 6.5, "EU": 39.5, "cm": 24.5, "outOfStock": true },
+          { "id": "wb-uk7", "UK": 7, "US": 7.5, "EU": 41, "cm": 25.4, "outOfStock": true },
+          { "id": "wb-uk8", "UK": 8, "US": 8.5, "EU": 42, "cm": 26.2, "outOfStock": true },
+          { "id": "wb-uk9", "UK": 9, "US": 9.5, "EU": 43, "cm": 27.1, "outOfStock": true },
+          { "id": "wb-uk10", "UK": 10, "US": 10.5, "EU": 44, "cm": 27.9, "outOfStock": true }
+        ]
+      }
+    },
+    {
+      "id": "white-pink",
+      "colorName": "White/Pink",
+      "price": 155.00,
+      "outOfStock": true,
+      "images": [
+        { "thumbnail": "/mock/images/color-variants/image component-1.png" },
+        { "large": "/mock/images/white/1165807.webp" },
+        { "large": "/mock/images/white/1165813.webp" },
+        { "large": "/mock/images/white/1165816.webp" },
+        { "large": "/mock/images/white/1165819.webp" }
+      ],
+      "sizeChart": {
+        "formats": ["UK", "US", "EU", "cm"],
+        "rows": [
+          { "id": "wp-uk6.5", "UK": 6.5, "US": 7, "EU": 40, "cm": 25, "outOfStock": true },
+          { "id": "wp-uk7.5", "UK": 7.5, "US": 8, "EU": 41.5, "cm": 25.8, "outOfStock": true },
+          { "id": "wp-uk8.5", "UK": 8.5, "US": 9, "EU": 42.5, "cm": 26.7, "outOfStock": true },
+          { "id": "wp-uk9.5", "UK": 9.5, "US": 10, "EU": 43.5, "cm": 27.5, "outOfStock": true },
+          { "id": "wp-uk10.5", "UK": 10.5, "US": 11, "EU": 44.5, "cm": 28.4, "outOfStock": true }
+        ]
+      }
+    },
+    {
+      "id": "cream-gold",
+      "colorName": "Cream/Gold",
+      "price": 170.00,
+      "outOfStock": true,
+      "images": [
+        { "thumbnail": "/mock/images/color-variants/image.png" },
+        { "large": "/mock/images/black/1082404.webp" },
+        { "large": "/mock/images/black/1082407.webp" },
+        { "large": "/mock/images/black/1082413.webp" },
+        { "large": "/mock/images/black/1082416.webp" }
+      ],
+      "sizeChart": {
+        "formats": ["UK", "US", "EU", "cm"],
+        "rows": [
+          { "id": "cg-uk7", "UK": 7, "US": 7.5, "EU": 41, "cm": 25.4, "outOfStock": true },
+          { "id": "cg-uk8", "UK": 8, "US": 8.5, "EU": 42, "cm": 26.2, "outOfStock": true },
+          { "id": "cg-uk9", "UK": 9, "US": 9.5, "EU": 43, "cm": 27.1, "outOfStock": true },
+          { "id": "cg-uk10", "UK": 10, "US": 10.5, "EU": 44, "cm": 27.9, "outOfStock": true },
+          { "id": "cg-uk11", "UK": 11, "US": 11.5, "EU": 45, "cm": 28.8, "outOfStock": true }
+        ]
+      }
+    }
+  ]
+}

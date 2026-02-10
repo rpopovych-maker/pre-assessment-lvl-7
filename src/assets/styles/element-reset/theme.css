@@ -1,0 +1,11 @@
+  :root {
+    --el-color-primary: var(--color-primary);
+    --el-border-color: var(--color-slate-800);
+    --el-color-primary-light-7: var(--color-primary-700);
+
+    --el-text-color-primary: var(--color-slate);
+    --el-text-color-regular: var(--color-slate-300);
+    --el-color-info: var(--color-slate);
+    --el-border-radius-base: var(--radius-lg);
+    --el-message-close-size: 24px;
+  }
