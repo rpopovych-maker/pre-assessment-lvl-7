@@ -4,7 +4,7 @@
     :data="topScores"
     :allow-drag-last-column="false"
     empty-text="No game records"
-    style="width: 320px"
+    style="width: 100%"
   >
     <el-table-column
       prop="date"

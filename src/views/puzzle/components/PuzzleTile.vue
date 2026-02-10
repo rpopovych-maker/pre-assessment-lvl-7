@@ -1,11 +1,11 @@
 <template>
   <button
-    class="size-full text-xl rounded flex items-center justify-center
+    class="@container size-full text-xl rounded flex items-center justify-center
      font-bold select-none not-empty:cursor-pointer not-empty:relative not-empty:z-10"
     :class="[bgColor, { 'shake': blocked && tile !== null }]"
     :disabled
   >
-    {{ tile }}
+    <span v-if="tile !== null" class="text-[28cqw]">{{ tile }}</span>
   </button>
 </template>
 

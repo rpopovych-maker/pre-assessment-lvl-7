@@ -1,13 +1,13 @@
 <template>
-  <div class="bg-violet-950 rounded  py-2 px-4">
+  <div class="bg-violet-950 rounded py-2 px-4">
     <ul class="flex items-center gap-4">
       <li
         v-for="detail in details"
         :key="detail.label"
-        class="flex flex-col w-16 text-right"
+        class="flex flex-col md:w-16 text-right"
       >
         <span class="text-xs uppercase">{{ detail.label }}</span>
-        <span class="font-bold tabular-nums">{{ detail.value }}</span>
+        <span class="text-sm md:text-base font-bold tabular-nums">{{ detail.value }}</span>
       </li>
     </ul>
   </div>

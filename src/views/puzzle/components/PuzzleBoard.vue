@@ -1,7 +1,14 @@
 <template>
   <div>
-    <div class="mb-4 flex items-center justify-between gap-6">
-      <el-button type="primary" size="large" @click="startNewGame">New Game</el-button>
+    <div class="mb-4 flex items-center justify-between gap-2 sm:gap-6">
+      <el-button
+        class="puzzle"
+        type="primary"
+        size="large"
+        @click="startNewGame"
+      >
+        New Game
+      </el-button>
 
       <PuzzleGameDetails :moves :elapsed-time="elapsed" />
     </div>

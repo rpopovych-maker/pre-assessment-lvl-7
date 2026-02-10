@@ -1,4 +1,3 @@
-import type { Action } from 'element-plus'
 import pluralize from 'pluralize'
 
 class PuzzleService {
@@ -42,18 +41,19 @@ class PuzzleService {
       .every((tile, i) => tile === i + 1) && board.at(-1) === null
   }
 
-  showWinMessage (moves: number, time: number, onConfirm: () => void) {
+  showWinMessage (moves: number, time: number, cb: () => void) {
     return ElMessageBox.alert('🎉 You solved the puzzle! 🎉<br>' +
       `It took you <b>${pluralize('move', moves, true)}</b> and <b>${pluralize('second', time, true)}</b> to complete it.<br>`,
     {
       confirmButtonText: 'Play Again!',
       title: 'Awesome!',
+      confirmButtonClass: 'puzzle',
       buttonSize: 'large',
       showClose: false,
       dangerouslyUseHTMLString: true,
       center: true,
-      callback: (action: Action) => {
-        if (action === 'confirm') onConfirm()
+      callback: () => {
+        cb()
       }
     })
   }
