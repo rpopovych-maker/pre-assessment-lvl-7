@@ -20,12 +20,16 @@
         </Transition>
       </div>
 
-      <ProductThumbnails
-        class="w-full"
-        :images="images"
-        :selected-index="activeIndex"
-        @select="navigate"
-      />
+      <AppScrollContainer class="w-full" content-class="gap-2 md:gap-4 justify-center">
+        <ProductThumbnail
+          v-for="image in images"
+          :key="image"
+          :src="image"
+          :alt="`${props.productName} - Image ${activeIndex + 1}`"
+          :is-selected="image === images[activeIndex]"
+          @click="navigate(images.indexOf(image))"
+        />
+      </AppScrollContainer>
     </div>
   </el-dialog>
 </template>
@@ -34,6 +38,7 @@
 type TSlideDirection = 'left' | 'right'
 
 const props = defineProps<{
+  productName: string
   images: string[]
   initialIndex?: number
 }>()

@@ -2,7 +2,7 @@
   <section class="flex flex-col md:flex-row gap-6 lg:gap-x-12">
     <ProductGallery
       :images="selectedProductVariant!.images"
-      :product-name="product!.name"
+      :product-name="product?.name || ''"
       class="md:w-[52%]"
     >
       <template #overlay>
@@ -21,7 +21,7 @@
           {{ product!.name }}
         </h1>
 
-        <div class="text-[22px] md:text-2md: font-semibold leading-7 text-slate">
+        <div class="text-[22px] md:text-[24px] font-semibold leading-7 text-slate">
           {{ productService.formatPrice(selectedProductVariant!.price) }}
         </div>
       </div>

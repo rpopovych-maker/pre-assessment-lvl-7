@@ -4,7 +4,6 @@ interface ILabelValue {
 }
 
 interface IProductImage {
-  thumbnail: string
   large: string
 }
 
@@ -34,14 +33,18 @@ interface IProductVariant {
   colorName: string
   price: number
   outOfStock: boolean
+  thumbnail: string
   images: IProductImage[]
   sizeChart: ISizeChart
 }
 
-interface ICartItem {
+interface ICartItemPayload {
   productId: string
   variantId: string
   sizeRowId: string
+}
+
+interface ICartItem extends ICartItemPayload {
   quantity: number
 }
 

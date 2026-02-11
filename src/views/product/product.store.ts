@@ -3,7 +3,17 @@ export const useProductStore = defineStore('productStore', () => {
   const product = ref<IProduct>()
   const selectedProductVariant = ref<IProductVariant>()
   const selectedSizeRow = ref<ISizeRow | null>(null)
-  const cart = ref<ICartItem[]>([])
+  const variants = computed(() => product.value?.variants || [])
+
+  const cartItemPayload = computed<ICartItemPayload | null>(() => {
+    if (!product.value || !selectedProductVariant.value || !selectedSizeRow.value) return null
+
+    return {
+      productId: product.value.id,
+      variantId: selectedProductVariant.value.id,
+      sizeRowId: selectedSizeRow.value.id
+    }
+  })
 
   function fetchProduct () {
     loading.value = true
@@ -16,31 +26,8 @@ export const useProductStore = defineStore('productStore', () => {
       .finally(() => { loading.value = false })
   }
 
-  function addToCart () {
-    const productId = product.value!.id
-    const existing = cart.value.find(
-      item => item.productId === productId &&
-        item.variantId === selectedProductVariant.value!.id &&
-        item.sizeRowId === selectedSizeRow.value!.id
-    )
-
-    if (existing) {
-      existing.quantity++
-    } else {
-      cart.value.push({
-        productId,
-        variantId: selectedProductVariant.value!.id,
-        sizeRowId: selectedSizeRow.value!.id,
-        quantity: 1
-      })
-    }
-
-    return productService.addToCart(productId)
-  }
-
-  function selectVariant (index: number) {
-    if (!product.value) return
-    selectedProductVariant.value = product.value.variants[index]
+  function selectVariant (id: string) {
+    selectedProductVariant.value = product.value?.variants.find(variant => variant.id === id)
     selectedSizeRow.value = selectedProductVariant.value?.sizeChart.rows.find(row => !row.outOfStock) ?? null
   }
 
@@ -54,10 +41,12 @@ export const useProductStore = defineStore('productStore', () => {
     product,
     selectedProductVariant,
     selectedSizeRow,
-    cart,
+
+    variants,
+    cartItemPayload,
+
     fetchProduct,
     selectVariant,
-    addToCart,
     toggleFavorite
   }
 })

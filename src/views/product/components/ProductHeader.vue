@@ -9,7 +9,6 @@
 <script setup lang="ts">
 import { routeNames } from '@/router/route-names'
 
-// TODO: fetch breadcrumbs from API
 const breadcrumbs = [
   {
     label: 'Home',

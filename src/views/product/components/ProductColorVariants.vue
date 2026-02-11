@@ -1,13 +1,13 @@
 <template>
   <div>
-    <h2 class="mb-3">
+    <h2 class="mb-3 md:mb-2">
       <span class="font-bold">Colour: </span>
-      <span>{{ selectedProductVariant?.colorName }}</span>
+      <span>{{ productStore.selectedProductVariant?.colorName }}</span>
     </h2>
 
     <AppScrollContainer content-class="gap-2 md:gap-4">
       <el-tooltip
-        v-for="(variant, index) in variants"
+        v-for="variant in productStore.variants"
         :key="variant.id"
         content="Sold out"
         placement="top"
@@ -16,11 +16,11 @@
       >
         <ProductThumbnail
           class="md:w-[100px] md:h-[70px]"
-          :src="variant.images[0]!.thumbnail!"
+          :src="variant.thumbnail"
           :alt="variant.colorName"
           :disabled="variant.outOfStock"
-          :is-selected="variant.id === selectedProductVariant?.id"
-          @click="productStore.selectVariant(index)"
+          :is-selected="variant.id === productStore.selectedProductVariant?.id"
+          @click="productStore.selectVariant(variant.id)"
         />
       </el-tooltip>
     </AppScrollContainer>
@@ -29,7 +29,4 @@
 
 <script setup lang="ts">
 const productStore = useProductStore()
-const { product, selectedProductVariant } = storeToRefs(productStore)
-
-const variants = computed(() => product.value?.variants || [])
 </script>

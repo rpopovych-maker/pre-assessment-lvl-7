@@ -18,13 +18,13 @@
       "colorName": "White/Tai Chi Yellow",
       "price": 155.00,
       "outOfStock": false,
+      "thumbnail": "/mock/images/color-variants/image component-2.png",
       "images": [
-        { "thumbnail": "/mock/images/color-variants/image component-2.png" },
+        { "large": "/mock/images/white/white-1600.webp" },
         { "large": "/mock/images/white/1165807.webp" },
         { "large": "/mock/images/white/1165813.webp" },
         { "large": "/mock/images/white/1165816.webp" },
-        { "large": "/mock/images/white/1165819.webp" },
-        { "large": "/mock/images/white/white-1600.webp" }
+        { "large": "/mock/images/white/1165819.webp" }
       ],
       "sizeChart": {
         "formats": ["UK", "US", "EU", "cm"],
@@ -50,10 +50,10 @@
     {
       "id": "black-silver",
       "colorName": "Metropolis/Jasper Green",
-      "price": 165.00,
+      "price": 158.00,
       "outOfStock": false,
+      "thumbnail": "/mock/images/color-variants/image-1.png",
       "images": [
-        { "thumbnail": "/mock/images/color-variants/image-1.png" },
         { "large": "/mock/images/black/1082404.webp" },
         { "large": "/mock/images/black/1082407.webp" },
         { "large": "/mock/images/black/1082413.webp" },
@@ -86,8 +86,8 @@
       "colorName": "White/Blue",
       "price": 160.00,
       "outOfStock": true,
+      "thumbnail": "/mock/images/color-variants/image component.png",
       "images": [
-        { "thumbnail": "/mock/images/color-variants/image component.png" },
         { "large": "/mock/images/white/1165807.webp" },
         { "large": "/mock/images/white/1165813.webp" },
         { "large": "/mock/images/white/1165816.webp" },
@@ -109,8 +109,8 @@
       "colorName": "White/Pink",
       "price": 155.00,
       "outOfStock": true,
+      "thumbnail": "/mock/images/color-variants/image component-1.png",
       "images": [
-        { "thumbnail": "/mock/images/color-variants/image component-1.png" },
         { "large": "/mock/images/white/1165807.webp" },
         { "large": "/mock/images/white/1165813.webp" },
         { "large": "/mock/images/white/1165816.webp" },
@@ -132,8 +132,8 @@
       "colorName": "Cream/Gold",
       "price": 170.00,
       "outOfStock": true,
+      "thumbnail": "/mock/images/color-variants/image.png",
       "images": [
-        { "thumbnail": "/mock/images/color-variants/image.png" },
         { "large": "/mock/images/black/1082404.webp" },
         { "large": "/mock/images/black/1082407.webp" },
         { "large": "/mock/images/black/1082413.webp" },

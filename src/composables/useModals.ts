@@ -1,6 +1,6 @@
 const Components = {
   TestModal: () => defineAsyncComponent(() => import('@/components/TestModal.vue')),
-  ProductSizeGuideModal: () => defineAsyncComponent(() => import('@/views/product/components/size-picker/ProductSizeGuideModal.vue')),
+  ProductSizeGuideModal: () => defineAsyncComponent(() => import('@/views/product/components/ProductSizeGuideModal.vue')),
   ProductPreviewModal: () => defineAsyncComponent(() => import('@/views/product/components/ProductPreviewModal.vue'))
 }
 
@@ -25,6 +25,9 @@ export function useModals () {
     const modal = modals.value.get(name)
     if (modal) {
       modal.isOpen = false
+      setTimeout(() => {
+        modals.value.delete(name)
+      }, 150)
     }
   }
 

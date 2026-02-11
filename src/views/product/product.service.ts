@@ -19,15 +19,7 @@ class ProductService {
   async fetchProduct (): Promise<IProduct> {
     const { default: data } = await import('./product.mock.json')
     await new Promise(resolve => setTimeout(resolve, 1000))
-    return data as unknown as IProduct
-  }
-
-  addToCart (id: string) {
-    return new Promise(resolve => {
-      setTimeout(() => {
-        resolve(id)
-      }, 500)
-    })
+    return data as IProduct
   }
 
   toggleFavorite (id: string, isFavorite: boolean) {

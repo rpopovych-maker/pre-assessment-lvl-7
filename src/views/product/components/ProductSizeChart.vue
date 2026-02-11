@@ -1,12 +1,10 @@
 <template>
   <div>
-    <ul class="flex items-center mb-2">
+    <ul class="flex items-center gap-5 mb-3 md:mb-2">
       <li v-for="format in sizeChart.formats" :key="format">
         <el-button
-          class="font-normal text-sm"
-          size="small"
           :class="{ 'text-secondary': selectedFormat === format }"
-          text
+          link
           @click="selectedFormat = format"
         >
           {{ productService.sizeFormatLabels[format] }}
