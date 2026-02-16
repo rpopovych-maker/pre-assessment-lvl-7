@@ -6,7 +6,6 @@ export default defineSoftonixEslintConfig({
   ignores: {
     extend: [
       'dts/*.d.ts',
-      'src/api/types/schema.d.ts',
       'src/api/types/axios.d.ts'
     ]
   }

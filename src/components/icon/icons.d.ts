@@ -1,2 +1,2 @@
 /* Auto-generated icons names - do not edit manually */
-type TIcons = 'car' | 'cart' | 'chevron-left' | 'chevron-right' | 'compare' | 'like' | 'like-outline'
+type TIcons = 'cart' | 'chevron-left' | 'chevron-right' | 'compare' | 'like' | 'like-outline'

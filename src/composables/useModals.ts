@@ -1,5 +1,4 @@
 const Components = {
-  TestModal: () => defineAsyncComponent(() => import('@/components/TestModal.vue')),
   ProductSizeGuideModal: () => defineAsyncComponent(() => import('@/views/product/components/ProductSizeGuideModal.vue')),
   ProductPreviewModal: () => defineAsyncComponent(() => import('@/views/product/components/ProductPreviewModal.vue'))
 }

@@ -9,9 +9,7 @@
     "build": "run-s type-check build-only",
     "preview": "vite preview",
     "type-check": "vue-tsc --build",
-    "lint": "eslint . --fix",
-    "openapi-generate": "npx openapi-typescript https://fakerestapi.azurewebsites.net/swagger/v1/swagger.json -o ./src/api/types/schema.d.ts",
-    "postinstall": "run-p openapi-generate"
+    "lint": "eslint . --fix"
   },
   "dependencies": {
     "@vueuse/core": "^12.8.2",
